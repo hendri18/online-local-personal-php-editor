@@ -53,9 +53,8 @@
         success: function (response) {
             if(response != ""){
                 $("#result").html(response);
-                myCodeMirror.setValue('<?php \n');
             }else{
-                myCodeMirror.setValue('<?php \n');
+                myCodeMirror.setValue('<?php echo "<?php" ?> \n');
             }
         },
         error: function () {
