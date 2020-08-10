@@ -46,21 +46,7 @@
         theme: "monokai",
         autoCloseBrackets: true
     });
-
-    $.ajax({
-        url: 'result.php',
-        type: 'GET',
-        success: function (response) {
-            if(response != ""){
-                $("#result").html(response);
-            }else{
-                myCodeMirror.setValue('<?php echo "<?php" ?> \n');
-            }
-        },
-        error: function () {
-            console.log("error: " + response);
-        }
-    });
+    myCodeMirror.setValue('<?php echo "<?php" ?> \n');
     $(document).ready(function(){
         $('#run').on("click", function(e){
             e.preventDefault();
