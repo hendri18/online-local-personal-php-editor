@@ -74,7 +74,7 @@
                             $("#result").html(response);
                         },
                         error: function (response) {
-                            if(response.status == 500) alert("your code may be wrong");
+                            if(response.status == 500) alert("Whoops, looks like something went wrong.");
                             console.log("error: ");
                             console.log(response)
                         }
