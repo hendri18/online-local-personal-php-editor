@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Online Text Editor">
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+    <meta name="author" content="Hendri Heryanto">
+    <meta property="og:image" content="Capture.PNG">
+    <meta property="twitter:image" content="Capture.PNG">
     <title>PHP Text Editor</title>
+    <link rel="icon" type="image/png" href="Capture.PNG">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
     <link rel="stylesheet" href="node_modules/codemirror/theme/monokai.css">
@@ -76,7 +82,7 @@
                         error: function (response) {
                             if(response.status == 500) alert("Whoops, looks like something went wrong.");
                             console.log("error: ");
-                            console.log(response)
+                            console.log(response);
                         }
                     });
                 }
