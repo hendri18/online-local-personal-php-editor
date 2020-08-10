@@ -73,8 +73,9 @@
                         success: function (response) {
                             $("#result").html(response);
                         },
-                        error: function () {
-                            console.log("error: " + response);
+                        error: function (response) {
+                            console.log("error: ");
+                            console.log(response)
                         }
                     });
                 }
