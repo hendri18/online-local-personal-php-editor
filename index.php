@@ -16,6 +16,14 @@
         #result{
             margin-top: 20px;
         }
+
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -24,6 +32,7 @@
     <div class="container-fluid">
         <div id="result"></div>
     </div>
+    <footer>© Hendri Heryanto <?php echo date('Y') ?></footer>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/codemirror/lib/codemirror.js"></script>
